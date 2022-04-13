@@ -1000,7 +1000,7 @@
       position: absolute;
       width: 580px;
       height: 386px;
-      background-image: url(../images/product-info__buble-left.svg);
+      background-image: url(../images/product-info__bubble-left.svg);
       left: 0;
       bottom: 0;
       border-radius: 0px 0px 0px 35px;
@@ -1010,7 +1010,7 @@
       position: absolute;
       width: 615px;
       height: 385px;
-      background-image: url(../images/product-info__buble-right.svg);
+      background-image: url(../images/product-info__bubble-right.svg);
       right: 0;
       bottom: 0;
       z-index: -1;
@@ -1092,7 +1092,7 @@
       position: absolute;
       left: 235px;
       top: 100px;
-      background-image: url(../images/informace__buble.svg);
+      background-image: url(../images/informace__bubble.svg);
       width: 889px;
       height: 906px;
       z-index: -1;
@@ -1303,4 +1303,46 @@
 .platba .form-end {
   margin-top: 55px;
 }
+
+// 404
+.chyba {
+  padding: 200px 0 200px;
+  &-inner {
+    text-align: center;
+  }
+  &__title {
+    color: #f3c78a;
+    font-size: 400px;
+    font-weight: 900;
+    position: relative;
+    display: inline-block;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -616px;
+      top: -314px;
+      width: 792px;
+      height: 883px;
+      background-image: url(../images/404__line.svg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: -633px;
+      bottom: -369px;
+      width: 950px;
+      height: 786px;
+      background-image: url(../images/404__bubble.svg);
+      z-index: -1;
+    }
+  }
+  &__subtitle {
+    font-size: 40px;
+    font-weight: 900;
+    color: #999;
+    text-transform: uppercase;
+    margin-top: -40px;
+  }
+}
+
 @import "media";

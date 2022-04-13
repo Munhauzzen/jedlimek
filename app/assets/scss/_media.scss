@@ -126,6 +126,20 @@
   .informace-left {
     padding: 41px 70px 200px 70px;
   }
+  .chyba {
+    padding: 100px 0 100px;
+  }
+  .chyba__title {
+    font-size: 300px;
+    &::before {
+      left: -537px;
+      top: -314px;
+    }
+    &::after {
+      transform: scale(0.8);
+      bottom: -359px;
+    }
+  }
 }
 
 @media screen and (max-width: 1240px) {
@@ -219,6 +233,48 @@
     padding-bottom: 100px;
     &-inner {
       margin: 0 auto;
+    }
+  }
+  .chyba {
+    padding: 70px 0 100px;
+  }
+  .chyba__title {
+    font-size: 300px;
+    &::before {
+      left: -483px;
+      top: -314px;
+      height: 794px;
+    }
+    &::after {
+      transform: scale(0.6);
+      bottom: -300px;
+    }
+  }
+  #modal {
+    .modal__list {
+      width: 250px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+    .modal__item {
+      display: flex;
+    }
+    .modal__item + .modal__item {
+      margin-left: 0;
+      margin-top: 25px;
+    }
+    .modal__link {
+      display: block;
+      width: 295px;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 18px;
+      margin: 0 auto;
+    }
+    .modal__link + .modal__link {
+      margin: 0 auto;
+      margin-top: 14px;
     }
   }
 }
@@ -332,6 +388,19 @@
   }
   .product-info__list {
     padding: 65px 115px;
+  }
+  .chyba__title {
+    font-size: 200px;
+  }
+  .chyba__subtitle {
+    font-size: 30px;
+    margin-top: -15px;
+  }
+  .chyba__title::after {
+    bottom: -374px;
+  }
+  .chyba__title::before {
+    height: 510px;
   }
 }
 
@@ -862,7 +931,26 @@
       padding: 20px 20px;
     }
   }
-  .expedice-form__img+.expedice-form__img{
+  .expedice-form__img + .expedice-form__img {
     margin-left: 7px;
+  }
+  .chyba__title {
+    font-size: 160px;
+  }
+  .chyba__subtitle {
+    font-size: 20px;
+  }
+  .chyba__title::after {
+    height: 910px;
+    transform: scale(0.4);
+    right: -498px;
+    bottom: -533px;
+  }
+
+  .chyba__title::before {
+    height: 879px;
+    transform: scale(0.5);
+    top: -380px;
+    left: -360px;
   }
 }
