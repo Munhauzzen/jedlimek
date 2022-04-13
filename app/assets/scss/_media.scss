@@ -402,6 +402,16 @@
   .chyba__title::before {
     height: 510px;
   }
+  #modal::before {
+    transform: scale(0.65);
+    left: -59px;
+    bottom: -136px;
+  }
+  #modal::after {
+    transform: scale(0.6);
+    right: -105px;
+    top: -130px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -952,5 +962,15 @@
     transform: scale(0.5);
     top: -380px;
     left: -360px;
+  }
+  #modal::before {
+    transform: scale(0.4);
+    left: -92px;
+    bottom: -207px;
+  }
+  #modal::after {
+    transform: scale(0.35);
+    right: -155px;
+    top: -180px;
   }
 }
