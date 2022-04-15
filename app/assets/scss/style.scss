@@ -1,5 +1,7 @@
 @import "global";
-
+.index--uppercase {
+  text-transform: uppercase;
+}
 .header {
   padding: 20px 0;
 }
@@ -280,7 +282,7 @@
 .about__item::after {
   content: "";
   width: 1px;
-  height: 600px;
+  height: 570px;
   background: url(../images/about-line.svg) repeat-y center / contain;
   position: absolute;
   z-index: -1;
@@ -299,7 +301,7 @@
 }
 
 .about__text {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -502,8 +504,8 @@
 
 .exp__body {
   max-width: 550px;
-  margin-left: auto;
-  transform: translateY(-600px);
+  margin-left: -120px;
+  transform: translateY(500px);
 }
 
 .exp__bodyText {
@@ -712,6 +714,7 @@
   color: #fff;
   position: relative;
   z-index: 1;
+  text-transform: uppercase;
 }
 
 .footer a {
@@ -732,7 +735,7 @@
 }
 
 .footer__head {
-  padding-top: 150px;
+  padding-top: 100px;
   display: flex;
   align-items: center;
 }
@@ -758,8 +761,9 @@
   background-color: #ecad56;
   border-radius: 50%;
   text-align: center;
-  line-height: 215px;
+  padding-top: 80px;
   font-size: 24px;
+  line-height: 35px;
   color: #362623;
   font-weight: 900;
   position: absolute;
@@ -1047,7 +1051,6 @@
 .informace {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
   &-left {
     background-color: #f9f9f9;
     width: 50%;
@@ -1082,11 +1085,14 @@
     }
   }
   &-right {
+    .header__nav{
+      margin-bottom: 100px;
+      justify-content: flex-end;
+    }
     background-color: #fff;
     width: 50%;
-    padding: 193px 0 200px 75px;
+    padding: 25px 131px 200px 75px;
     position: relative;
-    z-index: 9;
     &::before {
       content: "";
       position: absolute;
