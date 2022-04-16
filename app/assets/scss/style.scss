@@ -596,7 +596,8 @@
   width: 100%;
   max-width: 780px;
   min-height: 614px;
-  background: url(../images/buy-bg.jpg) no-repeat center / cover;
+  background: url(../images/buy-bg.png) no-repeat center / cover;
+  background-color: #E1E8F4;
   box-shadow: 0px 0px 80px rgba(202, 211, 227, 0.51);
   filter: drop-shadow(-80px 40px 200px rgba(0, 0, 0, 0.2));
   padding: 240px 0 0 340px;
@@ -1085,7 +1086,7 @@
     }
   }
   &-right {
-    .header__nav{
+    .header__nav {
       margin-bottom: 100px;
       justify-content: flex-end;
     }
@@ -1348,6 +1349,33 @@
     color: #999;
     text-transform: uppercase;
     margin-top: -40px;
+  }
+}
+
+// dekuju
+.dekuju__bg {
+  background-image: url(../images/dekuju__bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dekuju {
+  text-align: center;
+  padding: 200px 0 250px;
+  text-transform: uppercase;
+  &__title {
+    margin-bottom: 32px;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 130%;
+  }
+  &__subtitle{
+    font-size: 18px;
+    margin-bottom: 64px;
+  }
+  &__link{
+    width: 166px;
+    padding-left: 70px;padding-top: 18px;
   }
 }
 
