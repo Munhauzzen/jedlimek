@@ -6,7 +6,14 @@ $(function () {
     $("body, html").animate({ scrollTop: destination }, 800);
   });
 
-  $('select').styler();
+  $('.product-order-or__text-1').on('click', function () {
+    $('.product-order-or__text-1').addClass('active');
+    $('.product-order-or__text-2').removeClass('active');
+  });
+  $('.product-order-or__text-2').on('click', function () {
+    $('.product-order-or__text-2').addClass('active');
+    $('.product-order-or__text-1').removeClass('active');
+  });
 
 });
 

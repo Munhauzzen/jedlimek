@@ -373,8 +373,7 @@
 }
 
 .banner__link {
-  padding-left: 100px;
-  padding-right: 88px;
+  width: 279px;
 }
 
 .exp {
@@ -597,7 +596,7 @@
   max-width: 780px;
   min-height: 614px;
   background: url(../images/buy-bg.png) no-repeat center / cover;
-  background-color: #E1E8F4;
+  background-color: #e1e8f4;
   box-shadow: 0px 0px 80px rgba(202, 211, 227, 0.51);
   filter: drop-shadow(-80px 40px 200px rgba(0, 0, 0, 0.2));
   padding: 240px 0 0 340px;
@@ -616,7 +615,8 @@
 
 .end .buy__link {
   margin-top: 38px;
-  padding-right: 88px;
+  padding-right: 64px;
+  padding-left: 88px;
 }
 
 .end .advantage {
@@ -829,6 +829,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  justify-content: flex-end;
 }
 
 .footer__navLink {
@@ -906,17 +907,31 @@
     margin-bottom: 36px;
     &__text {
       padding: 13px 15px 11px;
-    }
-    &__text--active {
-      background-color: #fff;
-      border-radius: 35px;
+      cursor: pointer;
     }
   }
   &-form {
+    &__select {
+      width: 265px;
+      padding: 17px 0;
+      text-align: center;
+      border-radius: 35px;
+      border: 2px dashed #ecad56;
+    }
     &-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
+      &:nth-child(1):before {
+        content: "";
+        width: 26px;
+        height: 25px;
+        background-image: url(../images/cup__icon-1.svg);
+        left: 21px;
+        top: 16px;
+        position: absolute;
+      }
       & + & {
         margin-top: 32px;
       }
@@ -984,6 +999,10 @@
     }
   }
 }
+.product-order-or__text.active {
+  background-color: #fff;
+  border-radius: 35px;
+}
 //product-info
 
 .product-info {
@@ -998,6 +1017,7 @@
     text-transform: uppercase;
     border-radius: 35px;
     row-gap: 53px;
+    column-gap: 15px;
     position: relative;
     z-index: 9;
     &::before {
@@ -1023,7 +1043,7 @@
     }
   }
   &__item {
-    max-width: 622px;
+    max-width: 600px;
     width: 100%;
     padding-left: 85px;
     position: relative;
@@ -1369,13 +1389,14 @@
     font-weight: 900;
     line-height: 130%;
   }
-  &__subtitle{
+  &__subtitle {
     font-size: 18px;
     margin-bottom: 64px;
   }
-  &__link{
+  &__link {
     width: 166px;
-    padding-left: 70px;padding-top: 18px;
+    padding-left: 70px;
+    padding-top: 18px;
   }
 }
 
