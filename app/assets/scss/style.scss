@@ -15,6 +15,7 @@
 .header__nav {
   display: flex;
   gap: 25px;
+  z-index: 9;
 }
 
 .header__btn {
@@ -614,9 +615,10 @@
 }
 
 .end .buy__link {
+  width: 279px;
   margin-top: 38px;
   padding-right: 64px;
-  padding-left: 88px;
+  padding-left: 86px;
 }
 
 .end .advantage {
