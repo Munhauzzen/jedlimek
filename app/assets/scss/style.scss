@@ -244,16 +244,12 @@
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-  position: relative;
 }
 
 .about__picture {
-  width: 160px;
+  width: 660px;
   margin: 120px auto 0;
   filter: drop-shadow(-80px 40px 200px rgba(0, 0, 0, 0.12));
-  position: fixed;
-  top: -100px;
-  left: 10px;
 }
 
 .about__list {
